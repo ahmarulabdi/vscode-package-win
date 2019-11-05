@@ -1,0 +1,108 @@
+{
+	"name": "php-formatter",
+	"displayName": "PHP Formatter",
+	"description": "A wrapper for the Sensiolabs PHP CS Fixer. Analyzes some PHP source code and tries to fix coding standards issues (PSR-1 and PSR-2 compatible).",
+	"version": "0.2.4",
+	"publisher": "Sophisticode",
+	"author": {
+		"name": "Dick Visser"
+	},
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Dickurt/vscode-php-formatter"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Linters",
+		"Formatters",
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "phpformatter.fix",
+				"title": "Fixes current file or selection if there is any."
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "PHP Formatter Settings",
+			"properties": {
+				"phpformatter.pharPath": {
+					"type": "string",
+					"default": "",
+					"description": "Should point to php-cs-fixer.phar file, if you have installed this manually (without Composer). Should include .phar extension."
+				},
+				"phpformatter.phpPath": {
+					"type": "string",
+					"default": "php",
+					"description": "If the pharPath is set, and you are not using Composer, and you haven't added PHP to your PATH, this should point to the php.exe file."
+				},
+				"phpformatter.composer": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether the php-cs-fixer library has been installed using Composer. If true, the extension will override pharPath and assume you have added Composer to your PATH."
+				},
+				"phpformatter.level": {
+					"type": "string",
+					"default": "",
+					"description": "Deprecated in favor of phpformatter.arguments."
+				},
+				"phpformatter.fixers": {
+					"type": "string",
+					"default": "",
+					"description": "Deprecated in favor of phpformatter.arguments."
+				},
+				"phpformatter.arguments": {
+					"type": "array",
+					"default": [
+						"--level=psr2"
+					],
+					"description": "Add arguments to the executed fix command, like so: ['--level=psr2', '--fixers=linefeed,short_tag,indentation']."
+				},
+				"phpformatter.additionalExtensions": {
+					"type": "array",
+					"default": [],
+					"description": "Which additional file extensions, besides PHP, should be fixed as well. E.g. inc, without the leading dot. For this to work you'll also have to configure your VSCode files.associations settings (https://code.visualstudio.com/Docs/languages/overview#_common-questions)."
+				},
+				"phpformatter.logging": {
+					"type": "boolean",
+					"default": false,
+					"description": "If true, the extension will log all sorts of (debug) info to the console. Useful for troubleshooting."
+				},
+				"phpformatter.notifications": {
+					"type": "boolean",
+					"default": true,
+					"description": "If true, the extension will show notifications."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"build": "node ./node_modules/vscode/bin/compile -p ./",
+		"watch": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"dependencies": {
+		"open": "~0.0.5",
+		"tmp": "0.0.28"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.10",
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "c1af7319-9253-4a0f-a3f8-0c6a0d251b96",
+		"publisherId": "8749501c-1ebb-4636-8056-98ad46508976",
+		"publisherDisplayName": "Sophisticode"
+	}
+}

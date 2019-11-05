@@ -1,0 +1,98 @@
+{
+	"name": "simontest",
+	"displayName": "SimonTest",
+	"description": "Analyzes your Angular code and generates tests.",
+	"homepage": "https://simontest.net",
+	"version": "1.5.3",
+	"publisher": "SimonTest",
+	"repository": {
+		"url": "https://github.com/SimonTestNet/SimonTest/issues"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"bugs": {
+		"url": "https://github.com/SimonTestNet/SimonTest/issues"
+	},
+	"author": {
+		"name": "Simon",
+		"email": "simon@simontest.net"
+	},
+	"preview": false,
+	"keywords": [
+		"Angular",
+		"Angular2",
+		"test",
+		"unit test",
+		"generator"
+	],
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#18bc9c",
+		"theme": "dark"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.GenerateTests",
+		"onCommand:extension.GenerateComponent",
+		"onCommand:extension.UpdateLicense"
+	],
+	"main": "./index",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.GenerateTests",
+				"title": "Generate Angular Tests",
+				"category": "SimonTest"
+			},
+			{
+				"command": "extension.GenerateComponent",
+				"title": "Generate Component",
+				"category": "SimonTest"
+			},
+			{
+				"command": "extension.UpdateLicense",
+				"title": "Update License",
+				"category": "SimonTest"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.GenerateTests",
+					"group": "SimonTest@1"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "extension.GenerateComponent",
+					"group": "SimonTest@2",
+					"when": "resourceLangId == html"
+				}
+			]
+		}
+	},
+	"dependencies": {
+		"crypto-js": "^3.1.9-1",
+		"node-persist": "2.1.0",
+		"prettier": "^1.15.3",
+		"slash": "^1.0.0",
+		"strip-json-comments": "^2.0.1",
+		"typescript": "^2.0.3",
+		"vscode-extension-telemetry": "0.0.8",
+		"request": "^2.88.0"
+	},
+	"devDependencies": {
+		"vscode": "^1.0.0"
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"__metadata": {
+		"id": "129cc09c-af1b-4269-9570-e19ded564614",
+		"publisherId": "f2663cf1-f4c2-4f95-bf60-f5cde342f159",
+		"publisherDisplayName": "SimonTest"
+	}
+}

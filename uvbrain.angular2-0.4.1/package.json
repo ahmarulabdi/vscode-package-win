@@ -1,0 +1,46 @@
+{
+	"name": "Angular2",
+	"publisher": "UVBrain",
+	"displayName": "Angular 2, 4 and upcoming latest TypeScript HTML Snippets",
+	"description": "Angular 2, 4 and upcoming latest Typescript HTML ES6 fequently used snippets",
+	"public": true,
+	"icon": "images/angular-shield.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"bugs": {
+		"url": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets/issues",
+		"email": "balram.chavan@angular.cloud"
+	},
+	"homepage": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ultrasonicsoft/vscode-ng2-typescript-snippets.git"
+	},
+	"version": "0.4.1",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "typescript",
+				"path": "./snippets/typescript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4e2d44a1-45d8-4f74-9e96-158c4c51ccc4",
+		"publisherId": "e2248ff8-ae7a-4029-b435-d1cac8cf64e1",
+		"publisherDisplayName": "Balram Chavan"
+	}
+}

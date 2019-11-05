@@ -1,0 +1,54 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'show',
+1 verbose cli   'vsce',
+1 verbose cli   'version' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly mapToRegistry name vsce
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'vsce',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'vsce',
+7 silly mapToRegistry   name: 'vsce',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/vsce
+9 verbose request uri https://registry.npmjs.org/vsce
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 8:59:45 PM
+12 verbose request id 7bb437a7fc74d955
+13 verbose etag "A1QE6HW374ENNGW4GDI3QHN6L"
+14 http request GET https://registry.npmjs.org/vsce
+15 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.wdf.sap.corp proxy.wdf.sap.corp:8080
+16 info attempt registry request try #2 at 8:59:55 PM
+17 verbose etag "A1QE6HW374ENNGW4GDI3QHN6L"
+18 http request GET https://registry.npmjs.org/vsce
+19 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND proxy.wdf.sap.corp proxy.wdf.sap.corp:8080
+20 info attempt registry request try #3 at 9:00:55 PM
+21 verbose etag "A1QE6HW374ENNGW4GDI3QHN6L"
+22 http request GET https://registry.npmjs.org/vsce
+23 silly get cb [ 304, undefined ]
+24 verbose etag https://registry.npmjs.org/vsce from cache
+25 verbose get saving vsce to /Users/d065642/.npm/registry.npmjs.org/vsce/.cache.json
+26 verbose correctMkdir /Users/d065642/.npm correctMkdir not in flight; initializing
+27 verbose exit [ 0, true ]
+28 verbose stack Error: write EPIPE
+28 verbose stack     at exports._errnoException (util.js:1012:11)
+28 verbose stack     at WriteWrap.afterWrite (net.js:793:14)
+29 verbose cwd /Users/d065642/Lab/vscode-angular2-test-snippets
+30 error Darwin 15.6.0
+31 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "show" "vsce" "version"
+32 error node v6.3.1
+33 error npm  v3.10.3
+34 error code EPIPE
+35 error errno EPIPE
+36 error syscall write
+37 error write EPIPE
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]

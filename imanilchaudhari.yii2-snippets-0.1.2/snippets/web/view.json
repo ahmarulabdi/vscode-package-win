@@ -1,0 +1,7 @@
+{
+    "render": {
+		"prefix": "render",
+		"body": "\\$this->render('${views}', \\$${options = []});",
+		"description": "Render view file."
+	}
+}

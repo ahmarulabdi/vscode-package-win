@@ -1,0 +1,88 @@
+{
+	"name": "angular-material",
+	"displayName": "Angular Material 2, Flex layout 1, Covalent 1 & Material icon snippets",
+	"description": "Providers snippets Angular Material 2, Angular Flex layout 1, Teradata Covalent 1 & Material icons",
+	"icon": "angular_128px.png",
+	"version": "0.13.0",
+	"publisher": "1tontech",
+	"license": "See License section in README.md",
+	"homepage": "https://github.com/1tontech/material2-snippets/vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/1tontech/material2-snippets.git"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"galleryBanner": {
+		"color": "#E6E0EA",
+		"theme": "light"
+	},
+	"keywords": [
+		"Angular",
+		"Material",
+		"Material2",
+		"Flex",
+		"Covalent"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "blade",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "ejs",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "handlebars",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "latte",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "php",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "plaintext",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "razor",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "tpl",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets.json"
+			},
+			{
+				"language": "twig",
+				"path": "./snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "b3e2189e-2a1c-4a4f-94db-35f6b228ecf7",
+		"publisherId": "769109d9-e9aa-4716-9987-a9fa2ed087f4",
+		"publisherDisplayName": "1Ton Technologies"
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "outDir": "out",
+        "lib": [
+            "es6"
+        ],
+        "sourceMap": true,
+        "rootDir": ".",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "removeComments": true,
+        "strictNullChecks": true
+    },
+    "exclude": [
+        "node_modules",
+        ".vscode-test"
+    ]
+}
