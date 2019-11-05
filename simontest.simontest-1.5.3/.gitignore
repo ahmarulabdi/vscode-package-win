@@ -1,7 +1,0 @@
-out
-dist
-src
-test
-node_modules
-.vscode-test
-.vscodeignore
