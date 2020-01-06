@@ -1,0 +1,3 @@
+2019-11-29, 20:16:40.629 UTC
+[20:16:42.383 UTC] Verbose logs are written to:
+[20:16:42.383 UTC] /Users/roblou/code/vscode-chrome-debug/logs/darwin-Chrome Debug Adapter etc launch Should hit breakpoint even if webRoot has unexpected case all lowercase for VisualStudio-TEST.log

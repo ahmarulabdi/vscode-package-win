@@ -1,0 +1,84 @@
+2019-11-29, 20:16:46.621 UTC
+[20:16:46.621 UTC] OS: darwin x64
+[20:16:46.621 UTC] Adapter node: v12.13.0 x64
+[20:16:46.622 UTC] vscode-chrome-debug-core: 6.8.6
+[20:16:46.622 UTC] debugger-for-chrome: 4.12.1
+[20:16:46.622 UTC] From client: initialize({"adapterID":"chrome","linesStartAt1":true,"columnsStartAt1":true,"pathFormat":"path"})
+[20:16:46.622 UTC] To client: {"seq":0,"type":"response","request_seq":1,"command":"initialize","success":true,"body":{"exceptionBreakpointFilters":[{"label":"All Exceptions","filter":"all","default":false},{"label":"Uncaught Exceptions","filter":"uncaught","default":false}],"supportsConfigurationDoneRequest":true,"supportsSetVariable":true,"supportsConditionalBreakpoints":true,"supportsCompletionsRequest":true,"supportsHitConditionalBreakpoints":true,"supportsRestartFrame":true,"supportsExceptionInfoRequest":true,"supportsDelayedStackTraceLoading":true,"supportsValueFormattingOptions":true,"supportsEvaluateForHovers":true,"supportsLoadedSourcesRequest":true,"supportsBreakpointLocationsRequest":true,"supportsRestartRequest":true,"supportsSetExpression":true,"supportsLogPoints":true}}
+[20:16:46.622 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/initialize","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","successful":"true","timeTakenInMilliseconds":"1.852018","requestType":"request"}}}
+[20:16:46.622 UTC] From client: launch({"url":"http://localhost:7890","timeout":2000,"webRoot":"/Users/roblou/code/vscode-chrome-debug/testdata/intervalDebugger","port":9222,"trace":"verbose","logTimestamps":true,"disableNetworkCache":true,"logFilePath":"/Users/roblou/code/vscode-chrome-debug/logs/darwin-Chrome Debug Adapter etc launch Should throw error when launching if chrome debug port is in use-DA.log","runtimeExecutable":"/Users/roblou/code/vscode-chrome-debug/node_modules/puppeteer/.local-chromium/mac-662092/chrome-mac/Chromium.app/Contents/MacOS/Chromium","userDataDir":"/var/folders/tx/p0ycbfpj37786p760wwdg6y80000gn/T/chrome2-26729KdzmMHY9qqNX"})
+[20:16:46.622 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"debugStarted","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","request":"launch","args":["url","timeout","webRoot","port","trace","logTimestamps","disableNetworkCache","logFilePath","runtimeExecutable","userDataDir","breakOnLoadStrategy","pathMapping","sourceMaps","sourceMapPathOverrides","skipFileRegExps","targetFilter","smartStep","showAsyncStacks"]}}}
+[20:16:46.622 UTC] spawn('/Users/roblou/code/vscode-chrome-debug/node_modules/puppeteer/.local-chromium/mac-662092/chrome-mac/Chromium.app/Contents/MacOS/Chromium', ["--remote-debugging-port=9222","--no-first-run","--no-default-browser-check","--user-data-dir=/var/folders/tx/p0ycbfpj37786p760wwdg6y80000gn/T/chrome2-26729KdzmMHY9qqNX","about:blank"])
+[20:16:46.622 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:46.622 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:46.628 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:46.628 UTC] Got debug protocol version: 1.3
+[20:16:46.628 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:46.629 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:46.835 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:46.836 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:46.838 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:46.838 UTC] Got debug protocol version: 1.3
+[20:16:46.838 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:46.838 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:47.044 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:47.045 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:47.047 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:47.047 UTC] Got debug protocol version: 1.3
+[20:16:47.047 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:47.048 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:47.253 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:47.254 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:47.255 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:47.255 UTC] Got debug protocol version: 1.3
+[20:16:47.255 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:47.256 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:47.461 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:47.462 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:47.463 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:47.463 UTC] Got debug protocol version: 1.3
+[20:16:47.463 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:47.463 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:47.668 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:47.668 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:47.669 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:47.669 UTC] Got debug protocol version: 1.3
+[20:16:47.669 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:47.669 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:47.874 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:47.874 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:47.876 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:47.876 UTC] Got debug protocol version: 1.3
+[20:16:47.876 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:47.877 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:48.081 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:48.081 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:48.083 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:48.083 UTC] Got debug protocol version: 1.3
+[20:16:48.083 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:48.084 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:48.290 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:48.290 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:48.292 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:48.292 UTC] Got debug protocol version: 1.3
+[20:16:48.292 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:48.293 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:48.499 UTC] Getting browser and debug protocol version via http://127.0.0.1:9222/json/version
+[20:16:48.499 UTC] Discovering targets via http://127.0.0.1:9222/json/list
+[20:16:48.503 UTC] Got browser version: Chrome/76.0.3803.0
+[20:16:48.503 UTC] Got debug protocol version: 1.3
+[20:16:48.503 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetDebugProtocolVersion","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1"}}}
+[20:16:48.503 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"targetCount","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","numTargets":2}}}
+[20:16:48.505 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/launch","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","successful":"false","exceptionType":"firstChance","exceptionMessage":"Cannot connect to runtime process, timeout after {_timeout} ms - (reason: {_error}).","exceptionName":"Error","exceptionStack":"Error: Cannot connect to runtime process, timeout after {_timeout} ms - (reason: {_error}).\n    at Object.runtimeConnectionTimeout (/Users/roblou/code/vscode-chrome-debug-core/out/src/errors.js:91:12)\n    at /Users/roblou/code/vscode-chrome-debug-core/out/src/chrome/chromeConnection.js:110:49\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","exceptionId":"2010","timeTakenInMilliseconds":"1919.705208","requestType":"request"}}}
+[20:16:48.506 UTC] To client: {"seq":0,"type":"response","request_seq":2,"command":"launch","success":false,"message":"Cannot connect to runtime process, timeout after 2000 ms - (reason: Can't find a valid target that matches: about:blank. Available pages: [\"chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html\",\"http://localhost:7890/\"]).","body":{"error":{"id":2010,"format":"Cannot connect to runtime process, timeout after {_timeout} ms - (reason: {_error}).","variables":{"_error":"Can't find a valid target that matches: about:blank. Available pages: [\"chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html\",\"http://localhost:7890/\"]","_timeout":"2000"}}}}
+[20:16:48.597 UTC] From client: disconnect(undefined)
+[20:16:48.597 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"FullSessionStatistics/SourceMaps/Overrides","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","aspNetClientAppFallbackCount":0}}}
+[20:16:48.598 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"report-start-up-timings","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","RequestedContentWasDetected":"false","Steps":"[\"BeforeFirstStep\",\"ClientRequest/initialize\",\"ClientRequest/launch\",\"LaunchTarget.LaunchExe\",\"Attach\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\",\"Attach.RequestDebuggerTargetsInformation\",\"Attach.ProcessDebuggerTargetsInformation\"]","All":"2882.142685","BeforeFirstStep":"[864.033272]","WaitingAfter.ClientRequest/initialize":"[865.799659]","ClientRequest/initialize":"[5.474145]","ClientRequest/launch":"[5.602417]","LaunchTarget.LaunchExe":"[18.985631]","Attach":"[6.342006]","Attach.RequestDebuggerTargetsInformation":"[12.11419,2.262457,2.568636,1.855063,1.562561,1.400581,2.151879,2.327976,2.294067,4.117483]","Attach.ProcessDebuggerTargetsInformation":"[207.287435,206.986371,206.188309,205.862686,204.827324,205.01074,204.840931,206.519201,206.438368,94.675723]","WaitingAfter.ClientRequest/launch":"[2789.269444]","RequestedContentWasNotDetectedReason":"shutdown"}}}
+[20:16:48.598 UTC] Terminated: Got disconnect request
+[20:16:48.598 UTC] Waiting for any pending steps or log messages.
+[20:16:48.599 UTC] Killing Chrome process
+[20:16:48.599 UTC] To client: {"seq":0,"type":"response","request_seq":3,"command":"disconnect","success":true}
+[20:16:48.599 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"ClientRequest/disconnect","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","successful":"true","timeTakenInMilliseconds":"1.931532","requestType":"request"}}}
+[20:16:48.599 UTC] Current step and log messages complete
+[20:16:48.599 UTC] To client: {"seq":0,"type":"event","event":"output","body":{"category":"telemetry","output":"debugStopped","data":{"Versions.DebugAdapterCore":"6.8.6","Versions.DebugAdapter":"4.12.1","reason":"Got disconnect request"}}}
+[20:16:48.599 UTC] To client: {"seq":0,"type":"event","event":"terminated"}

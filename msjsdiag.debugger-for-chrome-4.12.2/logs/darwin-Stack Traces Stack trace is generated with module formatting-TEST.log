@@ -1,0 +1,45 @@
+2019-11-29, 20:17:25.920 UTC
+[20:17:28.008 UTC] START            10012: PuppeteerPage.waitForSelector(#button)
+[20:17:28.009 UTC] PROMISE-RETURNED 10012: PuppeteerPage.waitForSelector(#button)
+[20:17:28.019 UTC] END              10012: PuppeteerPage.waitForSelector(#button)  async  -> JSHandle@node
+[20:17:28.019 UTC] START            10013: Breakpoints.at(app.js)
+[20:17:28.019 UTC] START            10014: Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js.toString()
+[20:17:28.019 UTC] END              10014: Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js.toString()   -> Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js
+[20:17:28.019 UTC] END              10013: Breakpoints.at(app.js)   -> Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js
+[20:17:28.020 UTC] START            10015: Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js.breakpoint({ text: console.log('Test stack trace here') })
+[20:17:28.020 UTC] PROMISE-RETURNED 10015: Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js.breakpoint({ text: console.log('Test stack trace here') })
+[20:17:28.020 UTC] START            10016: BP @ console.log('Test stack trace here').setThenWaitForVerifiedThenValidate()
+[20:17:28.020 UTC] PROMISE-RETURNED 10016: BP @ console.log('Test stack trace here').setThenWaitForVerifiedThenValidate()
+[20:17:28.034 UTC] END              10016: BP @ console.log('Test stack trace here').setThenWaitForVerifiedThenValidate()  async  -> BP @ console.log('Test stack trace here')
+[20:17:28.034 UTC] START            10017: BP @ console.log('Test stack trace here').toString()
+[20:17:28.034 UTC] END              10017: BP @ console.log('Test stack trace here').toString()   -> BP @ console.log('Test stack trace here')
+[20:17:28.034 UTC] END              10015: Breakpoints at /Users/roblou/code/vscode-chrome-debug/testdata/stackTrace/app.js.breakpoint({ text: console.log('Test stack trace here') })  async  -> BP @ console.log('Test stack trace here')
+[20:17:28.034 UTC] START            10018: BP @ console.log('Test stack trace here').assertIsHitThenResumeWhen(Anonymous function: , { stackTrace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object], stackFrameFormat: [object Object] })
+[20:17:28.034 UTC] START            10019: #button.click()
+[20:17:28.035 UTC] PROMISE-RETURNED 10019: #button.click()
+[20:17:28.035 UTC] START            10020: Breakpoints.waitAndConsumePausedEvent(BP @ console.log('Test stack trace here'))
+[20:17:28.035 UTC] START            10021: PausedWizard.waitAndConsumePausedEvent(Anonymous function: pausedInfo)
+[20:17:28.035 UTC] PROMISE-RETURNED 10021: PausedWizard.waitAndConsumePausedEvent(Anonymous function: pausedInfo)
+[20:17:28.036 UTC] PROMISE-RETURNED 10020: Breakpoints.waitAndConsumePausedEvent(BP @ console.log('Test stack trace here'))
+[20:17:28.036 UTC] PROMISE-RETURNED 10018: BP @ console.log('Test stack trace here').assertIsHitThenResumeWhen(Anonymous function: , { stackTrace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object], stackFrameFormat: [object Object] })
+[20:17:28.040 UTC] END              10019: #button.click()  async  -> undefined
+[20:17:28.146 UTC] Resume/Pause #events = 1, state = Paused
+[20:17:28.150 UTC] Resume/Pause #events = 0, state = None
+[20:17:28.151 UTC] END              10021: PausedWizard.waitAndConsumePausedEvent(Anonymous function: pausedInfo)  async  -> undefined
+[20:17:28.151 UTC] END              10020: Breakpoints.waitAndConsumePausedEvent(BP @ console.log('Test stack trace here'))  async  -> undefined
+[20:17:28.156 UTC] START            10022: Breakpoints.resume()
+[20:17:28.156 UTC] START            10023: PausedWizard.resume()
+[20:17:28.156 UTC] PROMISE-RETURNED 10023: PausedWizard.resume()
+[20:17:28.156 UTC] PROMISE-RETURNED 10022: Breakpoints.resume()
+[20:17:28.171 UTC] END              10023: PausedWizard.resume()  async  -> undefined
+[20:17:28.172 UTC] END              10022: Breakpoints.resume()  async  -> undefined
+[20:17:28.172 UTC] END              10018: BP @ console.log('Test stack trace here').assertIsHitThenResumeWhen(Anonymous function: , { stackTrace: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object], stackFrameFormat: [object Object] })  async  -> BP @ console.log('Test stack trace here')
+[20:17:28.172 UTC] Default test clean-up
+[20:17:28.174 UTC] Default test clean-up finished
+[20:17:28.174 UTC] Closing puppeteer and chrome
+[20:17:28.191 UTC] Scucesfully closed puppeteer and chrome
+[20:17:28.191 UTC] Closing web-server
+[20:17:28.256 UTC] Web-server closed
+[20:17:28.256 UTC] teardown finished
+[20:17:28.257 UTC] Verbose logs are written to:
+[20:17:28.257 UTC] /Users/roblou/code/vscode-chrome-debug/logs/darwin-Stack Traces Stack trace is generated with line formatting-TEST.log
