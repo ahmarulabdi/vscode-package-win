@@ -1,0 +1,192 @@
+{
+	"version": "3.0.1",
+	"name": "angular-schematics",
+	"displayName": "Angular Schematics",
+	"description": "Angular schematics (CLI commands) from files Explorer or Command Palette.",
+	"keywords": [
+		"angular",
+		"angular cli",
+		"schematics",
+		"angular schematics",
+		"multi-root ready"
+	],
+	"categories": [
+		"Other"
+	],
+	"icon": "icon-angular.png",
+	"license": "MIT",
+	"publisher": "cyrilletuzi",
+	"author": {
+		"name": "cyrilletuzi",
+		"url": "https://www.cyrilletuzi.com/en/web/"
+	},
+	"contributors": [
+		{
+			"name": "cyrilletuzi",
+			"url": "https://www.cyrilletuzi.com/en/web/"
+		}
+	],
+	"homepage": "https://github.com/cyrilletuzi/vscode-angular-schematics/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyrilletuzi/vscode-angular-schematics/"
+	},
+	"bugs": {
+		"url": "https://github.com/cyrilletuzi/vscode-angular-schematics/issues"
+	},
+	"qna": false,
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"activationEvents": [
+		"workspaceContains:angular.json",
+		"workspaceContains:.angular-cli.json"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "ngschematics.generateComponent",
+				"title": "Angular: Generate a component"
+			},
+			{
+				"command": "ngschematics.generateService",
+				"title": "Angular: Generate a service"
+			},
+			{
+				"command": "ngschematics.generateModule",
+				"title": "Angular: Generate a module"
+			},
+			{
+				"command": "ngschematics.generate",
+				"title": "Angular: Generate another schematics"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "ngschematics.generateComponent",
+					"group": "angularschematics@1",
+					"when": "inAngularProject"
+				},
+				{
+					"command": "ngschematics.generateService",
+					"group": "angularschematics@2",
+					"when": "inAngularProject"
+				},
+				{
+					"command": "ngschematics.generateModule",
+					"group": "angularschematics@3",
+					"when": "inAngularProject"
+				},
+				{
+					"command": "ngschematics.generate",
+					"group": "angularschematics@4",
+					"when": "inAngularProject"
+				}
+			]
+		},
+		"configuration": [
+			{
+				"title": "Angular schematics configuration",
+				"properties": {
+					"ngschematics.schematics": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add other schematics (for example: \"@angular/material\")"
+					},
+					"ngschematics.componentTypes.exported": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add custom exported component suffixes (for example: \"UI\")"
+					},
+					"ngschematics.componentTypes.pure": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add custom pure component suffixes (for example: \"Presentation\")"
+					},
+					"ngschematics.componentTypes.page": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add custom page component suffixes (for example: \"Page\")"
+					},
+					"ngschematics.componentTypes.runtime": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add custom runtime component suffixes (for example: \"Modal\")"
+					},
+					"ngschematics.componentTypes.element": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						},
+						"default": [],
+						"description": "Add custom Angular Element suffixes (for example: \"Native\")"
+					}
+				}
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "angular",
+					"title": "Angular",
+					"icon": "angular.svg"
+				}
+			]
+		},
+		"views": {
+			"angular": [
+				{
+					"id": "angular-schematics",
+					"name": "Schematics",
+					"when": "inAngularProject"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "webpack --mode development",
+		"watch": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"pretest": "npm run test-compile",
+		"test": "node ./out/test/runTest.js",
+		"lint": "tslint -p ."
+	},
+	"devDependencies": {
+		"@types/glob": "7.1.1",
+		"@types/mocha": "5.2.7",
+		"@types/node": "12.12.24",
+		"@types/vscode": "1.41.0",
+		"glob": "7.1.6",
+		"mocha": "7.0.0",
+		"ts-loader": "6.2.1",
+		"tslint": "5.20.1",
+		"typescript": "3.7.4",
+		"vscode-test": "1.3.0",
+		"webpack": "4.41.5",
+		"webpack-cli": "3.3.10"
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "e0b91637-e16b-4a66-b531-4459c494f514",
+		"publisherId": "172d8a24-f5aa-4f96-8014-79b9f04f946e",
+		"publisherDisplayName": "Cyrille Tuzi"
+	}
+}

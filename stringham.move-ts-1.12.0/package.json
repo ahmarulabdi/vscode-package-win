@@ -1,0 +1,110 @@
+{
+	"name": "move-ts",
+	"displayName": "Move TS - Move TypeScript files and update relative imports",
+	"description": "extension for moving typescript files and folders and updating relative imports in your workspace",
+	"version": "1.12.0",
+	"publisher": "stringham",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stringham/move-ts.git"
+	},
+	"homepage": "https://github.com/stringham/move-ts",
+	"icon": "icon.png",
+	"keywords": [
+		"typescript",
+		"import",
+		"move",
+		"refactor",
+		"relative"
+	],
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:move-ts.move",
+		"onCommand:move-ts.reindex"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "move-ts.move",
+					"group": "1_modification",
+					"when": "explorerViewletVisible"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "move-ts.move",
+				"title": "Move Typescript"
+			},
+			{
+				"command": "move-ts.reindex",
+				"title": "Move TS: Reindex"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Move TS configuration",
+			"properties": {
+				"movets.relativeToTsconfig": {
+					"type": "boolean",
+					"default": false,
+					"description": "Create relative paths relative to the tsconfig.json"
+				},
+				"movets.skipWarning": {
+					"type": "boolean",
+					"default": false,
+					"description": "Skip the warning when using the move typescript command"
+				},
+				"movets.filesToScan": {
+					"type": "array",
+					"default": [
+						"**/*.ts",
+						"**/*.tsx"
+					],
+					"description": "Glob of files to scan and watch. Defaults to [**/*.ts,**/*.tsx]"
+				},
+				"movets.openEditors": {
+					"type": "boolean",
+					"default": false,
+					"description": "Make edits in vscode instead of saving the changes to disk."
+				},
+				"movets.removeIndexSuffix": {
+					"type": "boolean",
+					"default": true,
+					"description": "Removes index filename from imports"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"dependencies": {
+		"typescript": "^3.7.5",
+		"fs-extra-promise": "1.0.1",
+		"@types/fs-extra-promise": "1.0.8",
+		"minimatch": "3.0.4"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.36",
+		"mocha": "^7.0.1",
+		"@types/node": "13.7.0",
+		"@types/minimatch": "3.0.3",
+		"@types/mocha": "^7.0.1"
+	},
+	"__metadata": {
+		"id": "9f47c6a1-da06-41ce-ba18-5e281296aa0a",
+		"publisherId": "ed625899-f3bf-4eb3-a8b3-90ee2b253576",
+		"publisherDisplayName": "stringham"
+	}
+}
