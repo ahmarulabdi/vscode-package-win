@@ -5880,7 +5880,7 @@
 		"html-webpack-plugin": "3.2.0",
 		"imagemin-webpack-plugin": "2.4.2",
 		"mini-css-extract-plugin": "0.8.0",
-		"node-sass": "4.12.0",
+		"node-sass": "4.14.1",
 		"prettier": "1.18.2",
 		"sass-loader": "8.0.0",
 		"terser-webpack-plugin": "2.1.2",
